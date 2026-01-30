@@ -16,6 +16,23 @@ string generatePassword() {
 }
 
 int main() {
+    //Test case for Vigenere cipher
+    /*Vigenere cipher("jones");
+
+    string test = "abcdefghi";
+    string result = cipher.encrypt(test);
+
+    cout << "Input: " << test << endl;
+    cout << "Expected Output: jpphwouum" << endl;
+    cout << "Actual Output: " << result << endl;
+
+    if (result == "jpphwouum") {
+        cout << "Test passed!" << endl;
+    } else {
+        cout << "Test failed!" << endl;
+    }
+        */
+
     ifstream inFile("names_test.txt");
     ofstream outFile("rawdata.txt");
 
@@ -56,7 +73,7 @@ int main() {
     while(rawFile >> userId >> password) {
         string encryptedPassword = cipher.encrypt(password);
         encryptedFile << userId << " " << encryptedPassword << endl;
-        cout << userId << " " << encryptedPassword << endl;
+        //cout << userId << " " << encryptedPassword << endl;
     }
 
     cout << "Finished reading rawdata.txt" << endl;
