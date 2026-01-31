@@ -12,7 +12,7 @@ struct Node {
 
 class HashTable {
     private:
-        static const int SIZE = 101;
+        static const int SIZE = 10007;
         Node* table[SIZE];
         int hashFunction(string key);
     

@@ -35,7 +35,7 @@ int main() {
     }
         */
 
-    ifstream inFile("names_test.txt"); //Change to names.txt for final run
+    ifstream inFile("names.txt"); //Change to names.txt for final run
     ofstream outFile("rawdata.txt");
 
     if(!inFile) {
