@@ -1,5 +1,5 @@
 #ifndef HASHTABLE_HPP
-#define HASTABLE_HPP
+#define HASHTABLE_HPP
 
 #include <string> 
 using namespace std;
