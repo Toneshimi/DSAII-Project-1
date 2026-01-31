@@ -1,0 +1,60 @@
+Tony Gomez 
+Data Structures and Algorithms II
+Project 1: Hash Table with Vigenere Cipher
+User's Manual 
+
+Setup and Compilation
+
+1. Download and unzip the submission from eLearning on a Linux box in
+the multi-platform lab.
+
+2. The submission includes:
+    - main.cpp 
+    - Vigener.hpp 
+    - Vigenere.cpp 
+    - HashTable.hpp
+    - HashTable.cpp
+    - Makefile
+    - names.txt(input file)
+    - Proj1UML.png 
+    - UserManual.txt(this file)
+
+3. Environment: This program has been tested in the multi-platform lab 
+and will run there.
+
+4. Compiling: This program uses a Makefile for compilation.
+At the command line in Linux, type make. The program produces an excecutable
+entitled test.
+
+Running the Program: Be sure names.txt is in the same directory as the executable.
+Issue the command ./test. No command line arguments are required. 
+
+User Input: No user interaction is required.
+
+Output: Output of the legal and illegal test cases will go to the console
+and there will be two files generated. Output will be similar to this:
+
+Generated files: 
+    - rawdata.txt (UserIDs and unencrypted passwords)
+    - encrypteddata.txt (UserIDs and Vigenere encrypted passwords)
+These files will be created in the same directory as the executable.
+
+Passwords generated and saved to rawdata.txt
+Passwords encrypted and saved to encrypteddata.txt
+Data inserted into hash table.
+
+Legal: 
+UserID         Password(file)    Password(table/un)  Result
+SMITH          nwlrbbmqb         nwlrbbmqb           Match
+WILLIAMS       kyhiddqsc         kyhiddqsc           Match
+BROWN          xsjybldbe         xsjybldbe           Match
+MILLER         cdyggxxpk         cdyggxxpk           Match
+MOORE          apqfwkhop         apqfwkhop           Match
+
+Illegal: 
+UserID         Password(mod)     Password(table/un)  Result
+SMITH          zwlrbbmqb         nwlrbbmqb           No Match
+WILLIAMS       zyhiddqsc         kyhiddqsc           No Match
+BROWN          zsjybldbe         xsjybldbe           No Match
+MILLER         zdyggxxpk         cdyggxxpk           No Match
+MOORE          bpqfwkhop         apqfwkhop           No Match
